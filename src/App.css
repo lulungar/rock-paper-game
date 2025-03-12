@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  color: white;
+  background: linear-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+}
+
+.score-container {
+  border: 3px solid hsl(217, 16%, 45%);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  padding: 20px 30px;
+  gap: 350px;
+}
+
+.game-title h1 {
+  line-height: 25px;
+}
+
+.score-result-container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 40px;
+  border-radius: 12px;
+  border: none;
+}
+
+.score-result-container p {
+  color: hsl(229, 64%, 46%);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.score-result-container h1 {
+  color: hsl(229, 25%, 31%);
+  font-size: 50px;
+}
+
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.btn-container .btn-item {
+  position: absolute;
+  border-radius: 50%;
+  padding: 30px 40px;
+  border: 20px solid white;
+  cursor: pointer;
+}
+
+.btn-container .btn-item.paper {
+  border: 20px solid hsl(230, 89%, 62%);
+  left: 134px;
+  top: -63px;
+}
+
+.btn-container .btn-item.scissors {
+  border: 20px solid hsl(39, 89%, 49%);
+  left: 365px;
+  top: -63px;
+}
+
+.btn-container .btn-item.rock {
+  border: 20px solid hsl(349, 71%, 52%);
+  left: 247px;
+  top: 131px;
+}
+
+.rules {
+  background: transparent;
+  width: 150px;
+  border: 1px solid white;
+  color: white;
+  border-radius: 6px;
+  padding: 11px;
+  position: absolute;
+  right: 25px;
+  bottom: 22px;
+  cursor: pointer;
+}
+
+@media (max-width: 670px) {
+  main {
+    max-width: 350px;
+  }
+
+  .score-container {
+    max-width: 350px;
+    gap: 30px;
+  }
+
+  .btn-container .btn-item {
+    width: 120px;
+    height: 120px;
+    padding: 0;
+  }
+
+  .btn-container .btn-item img {
+    width: 30px;
+  }
+
+  .btn-container .btn-item.paper {
+    border: 15px solid hsl(230, 89%, 62%);
+    left: 4px;
+    top: -33px;
+  }
+
+  .btn-container .btn-item.scissors {
+    border: 15px solid hsl(39, 89%, 49%);
+    left: 234px;
+    top: -33px;
+  }
+
+  .btn-container .btn-item.rock {
+    border: 15px solid hsl(349, 71%, 52%);
+    left: 113px;
+    top: 191px;
+  }
+
+  .rules {
+    right: 112px;
+    bottom: 22px;
+  }
+}

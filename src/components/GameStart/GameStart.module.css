@@ -1,0 +1,102 @@
+.gameContent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.middle {
+  display: none;
+}
+
+.gameContent h1 {
+  font-size: 20px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.playerResult {
+  border-radius: 50%;
+  background-color: white;
+  padding: 50px 60px;
+  border: 20px solid white;
+}
+
+.playerResult.scissors {
+  border: 25px solid hsl(39, 89%, 49%);
+}
+
+.playerResult.paper {
+  border: 25px solid hsl(230, 89%, 62%);
+}
+
+.playerResult.rock {
+  border: 25px solid hsl(349, 71%, 52%);
+}
+
+.unpicked {
+  background-color: #172240;
+  padding: 50px 60px;
+  border-radius: 50%;
+  width: 221px;
+  height: 211px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.middle.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.middle h1 {
+  color: white;
+  font-size: 40px;
+}
+
+.middle button {
+  max-width: 190px;
+  background-color: white;
+  color: hsl(237, 49%, 15%);
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  padding: 15px 40px;
+}
+
+@media (max-width: 670px) {
+  .playerResult {
+    padding: 25px;
+  }
+
+  .playerResult img {
+    width: 30px;
+  }
+
+  .playerResult.scissors {
+    border: 15px solid hsl(39, 89%, 49%);
+  }
+
+  .playerResult.paper {
+    border: 15px solid hsl(230, 89%, 62%);
+  }
+
+  .playerResult.rock {
+    border: 15px solid hsl(349, 71%, 52%);
+  }
+
+  .gameContent h1 {
+    font-size: 12px;
+  }
+
+  .middle button {
+    max-width: 120px;
+  }
+}
