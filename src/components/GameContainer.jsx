@@ -11,7 +11,7 @@ const GameContainer = ({ choice, setChoise, setGameStart }) => {
           setGameStart(true);
         }}
         style={"btn-item paper"}
-        imgSrc={"/images/icon-paper.svg"}
+        imgSrc={"/rock-paper-game/images/icon-paper.svg"}
       />
       <GameItem
         onClick={() => {
@@ -19,7 +19,7 @@ const GameContainer = ({ choice, setChoise, setGameStart }) => {
           setGameStart(true);
         }}
         style={"btn-item rock"}
-        imgSrc={"/images/icon-rock.svg"}
+        imgSrc={"/rock-paper-game/images/icon-rock.svg"}
       />
       <GameItem
         onClick={() => {
@@ -27,7 +27,7 @@ const GameContainer = ({ choice, setChoise, setGameStart }) => {
           setGameStart(true);
         }}
         style={"btn-item scissors"}
-        imgSrc={"/images/icon-scissors.svg"}
+        imgSrc={"/rock-paper-game/images/icon-scissors.svg"}
       />
     </div>
   );
