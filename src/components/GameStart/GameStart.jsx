@@ -4,7 +4,7 @@ import cl from "./GameStart.module.css";
 const GameStart = ({ choice, isGame, setIsGame, points, setPoints }) => {
   const [houseChoice, setHouseChoice] = useState("");
   const [pathHouseImg, setPathHouseImg] = useState(""); //ne state
-  const pathImg = `/images/icon-${choice}.svg`;
+  const pathImg = `/rock-paper-game/images/icon-${choice}.svg`;
   const player = [cl.playerResult];
   const house = [cl.playerResult];
   const restart = [cl.middle, cl.active];
@@ -22,7 +22,7 @@ const GameStart = ({ choice, isGame, setIsGame, points, setPoints }) => {
   );
 
   useEffect(() => {
-    setPathHouseImg(`/images/icon-${houseChoice}.svg`);
+    setPathHouseImg(`/rock-paper-game/images/icon-${houseChoice}.svg`);
   }, [houseChoice]);
 
   function getRandomInt(min = 1, max = 3) {
